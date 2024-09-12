@@ -7,6 +7,13 @@ describe('template spec', () => {
   beforeEach('Main page', () => {
     homePage.openHomePage()
   })
+
+  afterEach('ClearData', () => {
+    cy.clearAllCookies()
+    cy.clearAllLocalStorage()
+    cy.clearAllSessionStorage()
+  })
+  
   it('User Registration and Login', () => {
     homePage.checkIfUrlIsCorrect('https://magento.softwaretestingboard.com/')
     homePage.checkIfTitlePageIsCorrect('Home Page')
