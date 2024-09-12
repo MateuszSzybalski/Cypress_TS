@@ -4,7 +4,7 @@ import { catalogSearch } from "../pom/catalogSearch"
 
 describe('template spec', () => {
 
-  beforeEach('Main page', () => {
+  beforeEach('Open Main page', () => {
     homePage.openHomePage()
   })
 
@@ -13,7 +13,7 @@ describe('template spec', () => {
     cy.clearAllLocalStorage()
     cy.clearAllSessionStorage()
   })
-  
+
   it('User Registration and Login', () => {
     homePage.checkIfUrlIsCorrect('https://magento.softwaretestingboard.com/')
     homePage.checkIfTitlePageIsCorrect('Home Page')
