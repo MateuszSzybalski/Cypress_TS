@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 import { homePage } from "../pages/HomePage";
 import { registryPage } from "../pages/RegistryPage";
