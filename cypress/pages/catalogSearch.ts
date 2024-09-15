@@ -1,5 +1,5 @@
 
-import { CommonMethods } from "./commonMethods"
+import { CommonMethods } from "./CommonMethods"
 
 export class CatalogSearch extends CommonMethods{
 

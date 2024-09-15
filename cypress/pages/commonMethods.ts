@@ -1,5 +1,3 @@
-/// <reference types="Cypress" />
-
 export class CommonMethods {
 
     //Selectors
