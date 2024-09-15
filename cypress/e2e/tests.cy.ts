@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 import { homePage } from "../pages/HomePage";
 import { registryPage } from "../pages/RegistryPage";
 import { catalogSearch } from "../pages/CatalogSearch";

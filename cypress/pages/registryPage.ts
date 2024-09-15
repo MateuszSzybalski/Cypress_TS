@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 import { CommonMethods } from "./CommonMethods";
 
 export class RegistryPage extends CommonMethods {
