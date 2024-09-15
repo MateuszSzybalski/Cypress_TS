@@ -1,7 +1,7 @@
 
 import { CommonMethods } from "./CommonMethods"
 
-export class HomePage extends CommonMethods{
+export class HomePage extends CommonMethods {
 
     //Selectors
     
