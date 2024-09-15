@@ -51,6 +51,7 @@ export class CommonMethods {
 
     waitForServiceResponse = (aliasName: string) => {
         cy.wait("@" + aliasName);
+        cy.wait(2000)
     }
   
   }
