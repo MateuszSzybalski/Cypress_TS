@@ -1,26 +1,21 @@
-
-import { CommonMethods } from "./CommonMethods"
+import { CommonMethods } from "./CommonMethods";
 
 export class HomePage extends CommonMethods {
+  //Selectors
 
-    //Selectors
-    
-    basketcounterNumber: string = '.counter-number'
-    loggedIn: string = '.logged-in'
-  
+  basketcounterNumber: string = ".counter-number";
+  loggedIn: string = ".logged-in";
 
-    //Methods
+  //Methods
 
-    openHomePage() {
-        cy.visit('https://magento.softwaretestingboard.com/')
-        cy.get(this.basketcounterNumber).should('not.be.visible')
-    }
-
-    selectHeaderLink(headerLinkText: string) {
-        cy.get('.header.links').contains(headerLinkText).click()
-
-    }
-  
+  openHomePage() {
+    cy.visit("https://magento.softwaretestingboard.com/");
+    cy.get(this.basketcounterNumber).should("not.be.visible");
   }
-  
-  export const homePage = new HomePage();
+
+  selectHeaderLink(headerLinkText: string) {
+    cy.get(".header.links").contains(headerLinkText).click();
+  }
+}
+
+export const homePage = new HomePage();
