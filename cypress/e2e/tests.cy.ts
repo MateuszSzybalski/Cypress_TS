@@ -1,6 +1,6 @@
-import { homePage } from "../pom/homePage"
-import { registryPage } from "../pom/registryPage"
-import { catalogSearch } from "../pom/catalogSearch"
+import { homePage } from "../pages/homePage"
+import { registryPage } from "../pages/registryPage"
+import { catalogSearch } from "../pages/catalogSearch"
 
 describe('template spec', () => {
 
