@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import { homePage } from "../POM/HomePage";
-import { registryPage } from "../POM/RegistryPage";
-import { catalogSearch } from "../POM/CatalogSearch";
+import { homePage } from "../pages/HomePage";
+import { registryPage } from "../pages/RegistryPage";
+import { catalogSearch } from "../pages/CatalogSearch";
 
 describe("template spec", () => {
   Cypress.on("uncaught:exception", () => {
