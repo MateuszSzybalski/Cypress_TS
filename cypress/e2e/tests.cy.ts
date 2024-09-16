@@ -11,6 +11,7 @@ describe("template spec", () => {
 
   beforeEach("Open Main page", () => {
     homePage.openHomePage();
+    cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
   });
 
   afterEach("ClearData", () => {
